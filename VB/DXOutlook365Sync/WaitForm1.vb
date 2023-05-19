@@ -29,7 +29,6 @@ Namespace DXOutlook365Sync
         End Sub
 
 '#End Region
-        Public Enum WaitFormCommand
-        End Enum
+  
     End Class
 End Namespace
