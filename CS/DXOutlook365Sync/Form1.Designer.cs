@@ -60,7 +60,7 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController(this.components);
-            this.dxOutlook365Sync1 = new DevExpress.XtraScheduler.Outlook365.DXOutlook365Sync(this.components);
+            this.dxOutlook365Sync1 = new DevExpress.XtraScheduler.Microsoft365Calendar.DXOutlook365Sync(this.components);
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::DXOutlook365Sync.WaitForm1), true, true);
             this.importBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.exportBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
@@ -499,7 +499,7 @@
         private DevExpress.XtraScheduler.UI.TimeScaleRibbonPageGroup timeScaleRibbonPageGroup1;
         private DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup layoutRibbonPageGroup1;
         private DevExpress.XtraScheduler.UI.SchedulerBarController schedulerBarController1;
-        private DevExpress.XtraScheduler.Outlook365.DXOutlook365Sync dxOutlook365Sync1;
+        private DevExpress.XtraScheduler.Microsoft365Calendar.DXOutlook365Sync dxOutlook365Sync1;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
         private DevExpress.XtraBars.BarButtonItem importBarButtonItem;
         private DevExpress.XtraBars.BarButtonItem exportBarButtonItem;

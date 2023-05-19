@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraScheduler;
-using DevExpress.XtraScheduler.Outlook365;
+using DevExpress.XtraScheduler.Microsoft365Calendar;
 
 namespace DXOutlook365Sync {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm {
