@@ -52,7 +52,7 @@
     <Reference Include="DevExpress.XtraScheduler.v23.1.Core" />
     <Reference Include="DevExpress.XtraScheduler.v23.1.Core.Desktop" />
     <Reference Include="DevExpress.XtraScheduler.v23.1.Extensions" />
-    <Reference Include="DevExpress.XtraScheduler.v23.1.Microsoft365Calendar, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v23.1.Microsoft365Calendar, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
