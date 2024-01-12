@@ -86,11 +86,16 @@ namespace DXOutlook365Sync {
             source.Rows.Add(new object[] { "App 2", "Test App 2", new DateTime(2023, 3, 1, 13, 30, 0), DateTime.Now.AddDays(1) });
         }
         private async void Form1_Load(object sender, EventArgs e) {
-            await dxOutlook365Sync1.InitAsync();            
+            await InitComponent();            
         }
 
         private async void initBarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
-            await dxOutlook365Sync1.InitAsync();
+            await InitComponent();
+        }
+        private async Task<InitStatus> InitComponent() {
+            string tenantId = "..."; // Enter your tenant (directory) ID.
+            string clientId = "..."; // Enter your client (application) ID.
+            return await dxOutlook365Sync1.InitAsync(tenantId, clientId);
         }
 
         private async void importBarButtonItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {

@@ -9,6 +9,10 @@ The [DevExpress WinForms Scheduler](https://www.devexpress.com/products/net/cont
 
 This demo application demonstrates how to synchronize user appointments with Microsoft 365 calendars (import, export, merge), resolve merge conflicts, and save changes to a data source.
 
+> **NOTE**
+> 
+> The [DXOutlook365Sync](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.Microsoft365Calendar.DXOutlook365Sync) component used in this example requires that you register the application in Azure as demonstrated in the following topic: [Register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app). After the registration, populate variables in the `InitComponent()` method with obtained tenant and client IDs.
+
 ![Synchronize Appointments with Microsoft 365 Calendars - DevExpress Scheduler for WinForms](https://user-images.githubusercontent.com/95131266/226899548-2c4540dc-84b9-4e1f-ad70-ec93d51f0e2e.png)
 
 ## Files to Review
@@ -17,4 +21,4 @@ This demo application demonstrates how to synchronize user appointments with Mic
 
 ## Documentation
 
-[Synchronization with Microsoft 365 Calendars](https://docs.devexpress.com/WindowsForms/404317/controls-and-libraries/scheduler/import-and-export/synchronization-with-outlook-365-calendars?v=23.1)
+[Synchronization with Microsoft 365 Calendars](https://docs.devexpress.com/WindowsForms/404317/controls-and-libraries/scheduler/import-and-export/synchronization-with-outlook-365-calendars)

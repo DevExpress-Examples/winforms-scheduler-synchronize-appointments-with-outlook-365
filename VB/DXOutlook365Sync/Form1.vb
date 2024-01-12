@@ -2,6 +2,7 @@ Imports System
 Imports System.ComponentModel
 Imports System.Data
 Imports System.Drawing
+Imports System.Threading.Tasks
 Imports System.Windows.Forms
 Imports DevExpress.XtraEditors
 Imports DevExpress.XtraScheduler
@@ -9,7 +10,7 @@ Imports DevExpress.XtraScheduler.Microsoft365Calendar
 
 Namespace DXOutlook365Sync
 
-    Public Partial Class Form1
+    Partial Public Class Form1
         Inherits DevExpress.XtraBars.Ribbon.RibbonForm
 
         Private source As DataTable
@@ -33,9 +34,9 @@ Namespace DXOutlook365Sync
         End Sub
 
         Private Sub DxOutlook365Sync1_MergeSingleItem(ByVal sender As Object, ByVal e As Outlook365CalendarMergeEventArgs)
-        ' Uncomment the following code to import Outlook365 events that have not started.
-        'if(e.OutlookEvent != null && e.OutlookEvent.Start.ToDateTime() < DateTime.Now)
-        '    e.ActionType = MergeActionType.DoNothing;
+            ' Uncomment the following code to import Outlook365 events that have not started.
+            'if(e.OutlookEvent != null && e.OutlookEvent.Start.ToDateTime() < DateTime.Now)
+            '    e.ActionType = MergeActionType.DoNothing;
         End Sub
 
         Private Sub DxOutlook365Sync1_InitComplete(ByVal sender As Object, ByVal e As InitCompleteEventArgs)
@@ -76,12 +77,18 @@ Namespace DXOutlook365Sync
         End Sub
 
         Private Async Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-            Await dxOutlook365Sync1.InitAsync()
+            Await InitComponent()
         End Sub
 
         Private Async Sub initBarButtonItem_ItemClick(ByVal sender As Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs)
-            Await dxOutlook365Sync1.InitAsync()
+            Await InitComponent()
         End Sub
+
+        Private Async Function InitComponent() As Task(Of InitStatus)
+            Dim tenantId As String = "..." ' Enter your tenant (directory) ID.
+            Dim clientId As String = "..." ' Enter your client (application) ID.
+            Return Await dxOutlook365Sync1.InitAsync(tenantId, clientId)
+        End Function
 
         Private Async Sub importBarButtonItem_ItemClick(ByVal sender As Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs)
             ' Displays the wait form.

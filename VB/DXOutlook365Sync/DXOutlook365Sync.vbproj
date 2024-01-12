@@ -1,4 +1,4 @@
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -52,7 +52,7 @@
     <Reference Include="DevExpress.XtraScheduler.v23.1.Core" />
     <Reference Include="DevExpress.XtraScheduler.v23.1.Core.Desktop" />
     <Reference Include="DevExpress.XtraScheduler.v23.1.Extensions" />
-    <Reference Include="DevExpress.XtraScheduler.v23.1.Microsoft365Calendar, Version=23.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v23.1.Microsoft365Calendar" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
@@ -113,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Azure.Identity">
-      <Version>1.8.0</Version>
+      <Version>1.10.4</Version>
     </PackageReference>
     <PackageReference Include="HtmlAgilityPack">
       <Version>1.11.46</Version>
