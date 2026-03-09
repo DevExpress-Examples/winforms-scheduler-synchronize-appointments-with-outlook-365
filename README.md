@@ -10,7 +10,7 @@ The [DevExpress WinForms Scheduler](https://www.devexpress.com/products/net/cont
 
 This demo application demonstrates how to synchronize user appointments with Microsoft 365 calendars (import, export, merge), resolve merge conflicts, and save changes to a data source.
 
-![Synchronize Appointments with Microsoft 365 Calendars - DevExpress Scheduler for WinForms](https://user-images.githubusercontent.com/95131266/226899548-2c4540dc-84b9-4e1f-ad70-ec93d51f0e2e.png)
+![Synchronize Appointments with Microsoft 365 Calendars - DevExpress Scheduler for WinForms](scheduler-sync-user-appointments-with-microsoft365-calendars.png)
 
 ## Files to Review
 
