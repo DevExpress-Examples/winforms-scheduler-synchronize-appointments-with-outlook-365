@@ -14,7 +14,7 @@ This demo application demonstrates how to synchronize user appointments with Mic
 > 
 > The [DXOutlook365Sync](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.Microsoft365Calendar.DXOutlook365Sync) component used in this example requires that you register the application in Azure as demonstrated in the following topic: [Register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app). After the registration, populate variables in the `InitComponent()` method with obtained tenant and client IDs.
 
-![Synchronize Appointments with Microsoft 365 Calendars - DevExpress Scheduler for WinForms](https://user-images.githubusercontent.com/95131266/226899548-2c4540dc-84b9-4e1f-ad70-ec93d51f0e2e.png)
+![Synchronize Appointments with Microsoft 365 Calendars - DevExpress Scheduler for WinForms](scheduler-sync-user-appointments-with-microsoft365-calendars.png)
 
 ## Files to Review
 
@@ -30,3 +30,4 @@ This demo application demonstrates how to synchronize user appointments with Mic
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
